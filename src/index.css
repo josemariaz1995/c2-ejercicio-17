@@ -1,0 +1,28 @@
+:root {
+  --color-principal: #2d3142;
+  --color-fondo-principal: #d8d5db;
+  --color-fondo-secundario: #adacb5;
+  --color-texto: #333;
+  --altura-cabecera-pie: 100px;
+}
+body {
+  color: var(--color-texto);
+  font-family: Poppins, sans-serif;
+}
+.cabecera,
+.pie {
+  background-color: var(--color-principal);
+  height: var(--altura-cabecera-pie);
+}
+.principal {
+  background-color: var(--color-fondo-principal);
+}
+.sidebar {
+  background-color: var(--color-fondo-secundario);
+}
+.contenedor-principal {
+  min-height: calc(100vh - var(--altura-cabecera-pie) * 2);
+}
+.pie p {
+  margin: 0;
+}
