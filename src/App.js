@@ -11,30 +11,12 @@ function App() {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi numquam, iusto omnis minima corrupti est officiis natus nam,adipisci commodi quo autem magnam sequi magni odio solutatemporibus velit quas";
 
   const categoria = [
-    {
-      id: 1,
-      noticia: "Noticias de deporte",
-    },
-    {
-      id: 2,
-      noticia: "Noticias de ocio",
-    },
-    {
-      id: 3,
-      noticia: "Noticias de cultura",
-    },
-    {
-      id: 4,
-      noticia: "Noticias de fiestas",
-    },
-    {
-      id: 5,
-      noticia: "Noticias de politica",
-    },
-    {
-      id: 6,
-      noticia: "Noticias de arregloCommit",
-    },
+    "Noticias de deporte",
+    "Noticias de ocio",
+    "Noticias de cultura",
+    "Noticias de fiestas",
+    "Noticias de politica",
+    "Noticias de arregloCommit",
   ];
   const otraCosa = [
     { id: 1, cosa: "Nosequé" },
@@ -66,8 +48,8 @@ function App() {
             <section className="listado">
               <h3>Categorías</h3>
               <ul className="list-unstyled">
-                {categoria.map((noticia) => (
-                  <li key={noticia.id}>{noticia.noticia}</li>
+                {categoria.map((categoria) => (
+                  <li key={categoria.id}>{categoria.noticia}</li>
                 ))}
               </ul>
             </section>
@@ -83,8 +65,9 @@ function App() {
         </div>
         <footer className="pie text-white row align-items-center">
           <p className="col text-center">
-            {NohayCopy === "no" &&
-              "Ningún derecho reservado, copia lo que quieras."}
+            {NohayCopy === "si"
+              ? "Texto del footer"
+              : "Ningún derecho reservado, copia lo que quieras."}
           </p>
         </footer>
       </div>
