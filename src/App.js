@@ -23,7 +23,8 @@ function App() {
     { id: 2, cosa: "Talycual" },
     { id: 3, cosa: "Nosecuánto" },
   ];
-  const NohayCopy = "no";
+  const textoFooter = "Texto del footer";
+  const nohayCopy = "no";
 
   return (
     <>
@@ -65,9 +66,7 @@ function App() {
         </div>
         <footer className="pie text-white row align-items-center">
           <p className="col text-center">
-            {NohayCopy === "si"
-              ? "Texto del footer"
-              : "Ningún derecho reservado, copia lo que quieras."}
+            {textoFooter} {nohayCopy === "si" && "-Ningún derecho reservado"}
           </p>
         </footer>
       </div>
